@@ -5,7 +5,7 @@
 title: Programming Group # the website title (if blank, full name will be used instead)
 first_name:
 middle_name:
-last_name: Programming Group
+last_name: Pavement Material Group
 email: guido.salvaneschi@unisg.ch
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   The Programming Group at the University of St. Gallen and at the Technical University of Darmstadt.
@@ -14,7 +14,7 @@ footer_text: >
 #  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 #  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
-url: https://catchpriyansh.github.io/website/ # the base hostname & protocol for your site
+url: https://catchpriyansh.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: /impressum # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR

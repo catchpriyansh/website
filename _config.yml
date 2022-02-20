@@ -2,11 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Programming Group # the website title (if blank, full name will be used instead)
-first_name:
+title: Pavement Material Group # the website title (if blank, full name will be used instead)
+first_name: Priyansh
 middle_name:
-last_name: Pavement Material Group
-email: guido.salvaneschi@unisg.ch
+last_name: Singh
+email: priyansh@iiti.ac.in
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   The Programming Group at the University of St. Gallen and at the Technical University of Darmstadt.
 footer_text: >
@@ -15,12 +15,12 @@ footer_text: >
 #  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
 url: https://catchpriyansh.github.io # the base hostname & protocol for your site
-baseurl: # the subpath of your site, e.g. /blog/
+baseurl: /website/ # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: /impressum # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 future: true # Also render sites which are dated in the future
 
-google_site_verification: RMUCoHAseeFv2jAdfyJb4XLx4e1J8XpU1l8fvwAxk1g
+google_site_verification: #
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -129,16 +129,30 @@ kramdown:
 
 # Includes & excludes
 include: ['_pages']
-exclude: ['bin', 'LICENSE', 'node_modules', 'package.json', 'package-lock.json', 'README.md', 'vendor']
+exclude:
+  - bin
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+keep_files:
+  - CNAME
+  - .nojekyll
+  - .git
 
 # Plug-ins
 plugins:
+  - jekyll-archives
+  - jekyll-diagrams
   - jekyll-email-protect
+  - jekyll-feed
   - jekyll-github-metadata
+  - jekyll-imagemagick
   - jekyll-paginate-v2
   - jekyll/scholar
-  - jekyll-twitter-plugin
   - jekyll-sitemap
+  - jekyll-target-blank
+  - jekyll-twitter-plugin
+  - jemoji
   - jekyll-regex-replace
   # - jemoji # loads emoji images from GitHubs servers (cross origin...) Rather use unicode emojis in text
   # - bootstrap
@@ -146,7 +160,7 @@ plugins:
 
 defaults:
   - scope:
-      path: "assets/lib/**"
+      path:  "assets/**/*.*"
     values:
       sitemap: false
   - scope:
